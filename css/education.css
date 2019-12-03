@@ -1,0 +1,91 @@
+.uni-logo{
+	width: 100px;
+	height: 100px;
+}
+/* Experiences */
+ul.experiences {
+    padding-left: 15px;
+    margin-top: -1px;
+}
+ul.experiences li {
+    padding-left: 10px;
+    margin-bottom: 2.5em;
+    list-style: none;
+/*     background: url('../img/misc/list-bullet-darkgray.png') no-repeat; */
+}
+.where {
+    font-size: 1.1em; /* 18/16 -> 18px */
+    font-weight: 300;
+    display: inline;
+    margin-right: 0.5em;
+}
+.what {
+    font-size: 0.79em; /* 12/16 -> 12px */
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #fec608;
+    display: inline-block;
+    padding: 3px 12px;
+    margin: -5px 0.5em 0 0 !important;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.when {
+    float: right;
+    color: #3A3A3A;
+    font-style: italic;
+    font-size: 12px;
+}
+.description {
+    display: block;
+    margin-top: 0.5em;
+}
+/* BORDERS AND BULLETS */
+
+p {
+    /*CSS reset*/
+    margin-bottom: 0;
+}
+
+ul.experiences li {
+    position:relative; /* so that pseudoelements are positioned relatively to their "li"s*/
+    /* use padding-bottom instead of margin-bottom.*/ 
+    margin-bottom: 0; /* This overrides previously specified margin-bottom */
+    padding-bottom: 2.5em;
+}
+
+ul.experiences li:after {
+    /* bullets */
+    content: "\2022";
+    position: absolute;
+    left: -22px; /*adjust manually*/
+    top: -0.45em;
+    color: #fec608; /* Change the color */
+    font-weight: bold;  /* If you want it to be bold */
+  	display: inline-block; /* Needed to add space between the bullet and the text */
+  	width: 1em; /* Also needed for space (tweak if needed) */
+  	font-size: 40px;
+}
+
+ul.experiences li:before {
+    /* lines */
+    content:"";
+    position: absolute;
+    left: -16px; /* adjust manually */
+    border-left: 1.5px solid black;
+    height: 150%;
+    width: 1px;
+}
+
+ul.experiences li:first-child:before {
+   /* first li's line */
+   top: 6px; /* moves the line down so that it disappears under the bullet. Adjust manually */
+}
+
+ul.experiences li:last-child:before {
+    /* last li's line */
+   height: 45px; /* shorten the line so it goes only up to the bullet. Is equal to first-child:before's top */
+}
+

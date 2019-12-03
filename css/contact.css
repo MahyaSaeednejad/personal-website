@@ -1,0 +1,40 @@
+
+.media-first{
+  margin-left: 30px;
+}
+.contact_details .media .media-left {
+  padding-right: 20px;
+}
+
+.contact_details .media .media-left i {
+  height: 60px;
+  width: 60px;
+  background: #fec608;
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  line-height: 60px;
+  border-radius: 50%;
+  border: 1px solid #fec608;
+  transition: all 400ms linear 0s;
+}
+
+.contact_details .media .media-body h4 {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #333333;
+  padding-bottom: 10px;
+}
+
+.contact_details .media .media-body p {
+  padding: 0px;
+  font-size: 14px;
+  color: #666666;
+  line-height: 24px;
+}
+
+.contact_details .media:hover .media-left i {
+  background: transparent;
+  color: #fec608;
+}
