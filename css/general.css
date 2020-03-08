@@ -7,27 +7,30 @@ a{
 	text-decoration: none;
 }
 .container{
-	background-color:#F0F0F0;
+	background-color:transparent;
+}
+.base{
+  background-color:#F0F0F0;
 }
 .sidenav-left {
   height: 100%;
-  width: 5%;
+  width: 4%;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: #A9A9A9;
   overflow-x: hidden;
   padding-top: 20px;
 }
 .sidenav-right {
   height: 100%;
-  width: 5%;
+  width: 4%;
   position: fixed;
   z-index: 1;
   top: 0;
   right: 0;
-  background-color: #111;
+  background-color: #A9A9A9;
   overflow-x: hidden;
   padding-top: 20px;
 }
